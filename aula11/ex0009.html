@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificando a Nacionalidade</h1>
+    Digite sua nacionalidade:
+    <input type="text" name="txtnacio" id="txtnacio">
+    <input type="button" value="Verificar" onclick="confereNacionalidade()">
+    <div id="print"></div>
+
+    <script>
+        function confereNacionalidade(){
+            var nacionalidade = window.document.querySelector('input#txtnacio').value
+            var print = window.document.querySelector('div#print')
+        if (nacionalidade == 'Brasil') {
+            print.innerHTML = "<p>Você é um <strong>brasileiro.</strong></p>"
+        }
+        else {
+            print.innerHTML = "<p>Você é um <strong>estrangeiro</strong>. Seja bem-vindo ao Brasil.</p>"
+        }
+        }
+    </script>
+
+
+
+    
+</body>
+</html>
